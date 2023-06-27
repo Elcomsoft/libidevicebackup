@@ -1,0 +1,12 @@
+prefix=@prefix@
+exec_prefix=@exec_prefix@
+libdir=@libdir@
+includedir=@includedir@
+
+Name: libidevicebackup
+Description: idevicebackup packed in a library
+
+Requires: @libimobiledevice_requires@ @libimobiledevice_glue_requires@ @libgeneral_requires@ @libplist_requires@
+Version: @VERSION_COMMIT_COUNT@
+Libs: -L${libdir} -lidevicebackup
+Cflags: -I${includedir}

@@ -1,0 +1,347 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2A489EC52A4AC912007614CE /* libimobiledevice-glue-1.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A489EC42A4AC912007614CE /* libimobiledevice-glue-1.0.0.dylib */; };
+		2A489EC62A4AC912007614CE /* libimobiledevice-glue-1.0.0.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 2A489EC42A4AC912007614CE /* libimobiledevice-glue-1.0.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		2AC4FF9329F69EC60088106C /* libplist-2.0.4.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AC4FF9229F69EC60088106C /* libplist-2.0.4.dylib */; };
+		2AC4FF9429F69EC60088106C /* libplist-2.0.4.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 2AC4FF9229F69EC60088106C /* libplist-2.0.4.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		87801A3226860ED90017BEBF /* IBKPexception.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 87801A3026860ED90017BEBF /* IBKPexception.cpp */; };
+		8784084C2685E4250041F3C0 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8784084B2685E4250041F3C0 /* main.cpp */; };
+		878408542685E43B0041F3C0 /* libidevicebackup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 878408522685E43B0041F3C0 /* libidevicebackup.cpp */; };
+		878408572685E4740041F3C0 /* libimobiledevice-1.0.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 878408562685E4740041F3C0 /* libimobiledevice-1.0.6.dylib */; };
+		878408582685E4740041F3C0 /* libimobiledevice-1.0.6.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 878408562685E4740041F3C0 /* libimobiledevice-1.0.6.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		878408612685E9510041F3C0 /* libgeneral.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 878408602685E9510041F3C0 /* libgeneral.0.dylib */; };
+		878408622685E9510041F3C0 /* libgeneral.0.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 878408602685E9510041F3C0 /* libgeneral.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		878408462685E4250041F3C0 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		878408592685E4740041F3C0 /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				878408582685E4740041F3C0 /* libimobiledevice-1.0.6.dylib in Embed Libraries */,
+				2A489EC62A4AC912007614CE /* libimobiledevice-glue-1.0.0.dylib in Embed Libraries */,
+				878408622685E9510041F3C0 /* libgeneral.0.dylib in Embed Libraries */,
+				2AC4FF9429F69EC60088106C /* libplist-2.0.4.dylib in Embed Libraries */,
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2A489EC42A4AC912007614CE /* libimobiledevice-glue-1.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libimobiledevice-glue-1.0.0.dylib"; path = "../../../../usr/local/lib/libimobiledevice-glue-1.0.0.dylib"; sourceTree = "<group>"; };
+		2AC4FF9229F69EC60088106C /* libplist-2.0.4.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libplist-2.0.4.dylib"; path = "../../../../usr/local/lib/libplist-2.0.4.dylib"; sourceTree = "<group>"; };
+		87801A3026860ED90017BEBF /* IBKPexception.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = IBKPexception.cpp; sourceTree = "<group>"; };
+		87801A33268611980017BEBF /* IBKPexception.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = IBKPexception.hpp; path = include/libidevicebackup/IBKPexception.hpp; sourceTree = SOURCE_ROOT; };
+		87801A34268611980017BEBF /* libidevicebackup.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = libidevicebackup.hpp; path = include/libidevicebackup/libidevicebackup.hpp; sourceTree = SOURCE_ROOT; };
+		878408482685E4250041F3C0 /* libidevicebackup */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = libidevicebackup; sourceTree = BUILT_PRODUCTS_DIR; };
+		8784084B2685E4250041F3C0 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		878408522685E43B0041F3C0 /* libidevicebackup.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = libidevicebackup.cpp; sourceTree = "<group>"; };
+		878408562685E4740041F3C0 /* libimobiledevice-1.0.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libimobiledevice-1.0.6.dylib"; path = "../../../../usr/local/lib/libimobiledevice-1.0.6.dylib"; sourceTree = "<group>"; };
+		8784085D2685E5E00041F3C0 /* libplist-2.0.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libplist-2.0.3.dylib"; path = "../../../../usr/local/lib/libplist-2.0.3.dylib"; sourceTree = "<group>"; };
+		878408602685E9510041F3C0 /* libgeneral.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libgeneral.0.dylib; path = ../../../../usr/local/lib/libgeneral.0.dylib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		878408452685E4250041F3C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				878408572685E4740041F3C0 /* libimobiledevice-1.0.6.dylib in Frameworks */,
+				2A489EC52A4AC912007614CE /* libimobiledevice-glue-1.0.0.dylib in Frameworks */,
+				878408612685E9510041F3C0 /* libgeneral.0.dylib in Frameworks */,
+				2AC4FF9329F69EC60088106C /* libplist-2.0.4.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8784083F2685E4250041F3C0 = {
+			isa = PBXGroup;
+			children = (
+				8784084A2685E4250041F3C0 /* libidevicebackup */,
+				878408492685E4250041F3C0 /* Products */,
+				878408552685E4740041F3C0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		878408492685E4250041F3C0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				878408482685E4250041F3C0 /* libidevicebackup */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8784084A2685E4250041F3C0 /* libidevicebackup */ = {
+			isa = PBXGroup;
+			children = (
+				87801A33268611980017BEBF /* IBKPexception.hpp */,
+				87801A3026860ED90017BEBF /* IBKPexception.cpp */,
+				87801A34268611980017BEBF /* libidevicebackup.hpp */,
+				878408522685E43B0041F3C0 /* libidevicebackup.cpp */,
+				8784084B2685E4250041F3C0 /* main.cpp */,
+			);
+			path = libidevicebackup;
+			sourceTree = "<group>";
+		};
+		878408552685E4740041F3C0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A489EC42A4AC912007614CE /* libimobiledevice-glue-1.0.0.dylib */,
+				2AC4FF9229F69EC60088106C /* libplist-2.0.4.dylib */,
+				878408602685E9510041F3C0 /* libgeneral.0.dylib */,
+				8784085D2685E5E00041F3C0 /* libplist-2.0.3.dylib */,
+				878408562685E4740041F3C0 /* libimobiledevice-1.0.6.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		878408472685E4250041F3C0 /* libidevicebackup */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8784084F2685E4250041F3C0 /* Build configuration list for PBXNativeTarget "libidevicebackup" */;
+			buildPhases = (
+				878408442685E4250041F3C0 /* Sources */,
+				878408452685E4250041F3C0 /* Frameworks */,
+				878408462685E4250041F3C0 /* CopyFiles */,
+				878408592685E4740041F3C0 /* Embed Libraries */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = libidevicebackup;
+			productName = libidevicebackup;
+			productReference = 878408482685E4250041F3C0 /* libidevicebackup */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		878408402685E4250041F3C0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					878408472685E4250041F3C0 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = 878408432685E4250041F3C0 /* Build configuration list for PBXProject "libidevicebackup" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8784083F2685E4250041F3C0;
+			productRefGroup = 878408492685E4250041F3C0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				878408472685E4250041F3C0 /* libidevicebackup */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		878408442685E4250041F3C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8784084C2685E4250041F3C0 /* main.cpp in Sources */,
+				878408542685E43B0041F3C0 /* libidevicebackup.cpp in Sources */,
+				87801A3226860ED90017BEBF /* IBKPexception.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8784084D2685E4250041F3C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		8784084E2685E4250041F3C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		878408502685E4250041F3C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					HAVE_STPCPY,
+					"EXPECTIONNAME='IBKPexception'",
+					DEBUG_PLIST,
+				);
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		878408512685E4250041F3C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		878408432685E4250041F3C0 /* Build configuration list for PBXProject "libidevicebackup" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8784084D2685E4250041F3C0 /* Debug */,
+				8784084E2685E4250041F3C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8784084F2685E4250041F3C0 /* Build configuration list for PBXNativeTarget "libidevicebackup" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				878408502685E4250041F3C0 /* Debug */,
+				878408512685E4250041F3C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 878408402685E4250041F3C0 /* Project object */;
+}
