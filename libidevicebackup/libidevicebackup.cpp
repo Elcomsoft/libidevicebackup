@@ -153,7 +153,7 @@ static void notify_cb(const char *notification, void *userdata){
         PRINT_VERBOSE(1, "User has cancelled the backup process on the device.\n");
         (*quit_flag)++;
     } else if (!strcmp(notification, NP_BACKUP_DOMAIN_CHANGED)) {
-        warning("Backup domain changed!");
+        debug("Backup domain changed!");
     } else {
         PRINT_VERBOSE(1, "Unhandled notification '%s' (TODO: implement)\n", notification);
     }
@@ -983,7 +983,7 @@ static int mb2_handle_receive_files(mobilebackup2_client_t mobilebackup2, plist_
         plist_get_uint_val(node, &backup_total_size);
     }
     if (backup_total_size > 0) {
-        PRINT_VERBOSE(1, "Receiving files\n");
+        PRINT_VERBOSE(2, "Receiving files\n");
     }
 
     do {

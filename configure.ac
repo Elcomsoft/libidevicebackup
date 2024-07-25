@@ -22,7 +22,7 @@ AC_PROG_CC
 # Check for operating system
 AC_MSG_CHECKING([whether we need platform-specific build settings])
 case $host_os in
-  *mingw32*|*cygwin*)
+  *mingw32*|*cygwin*|*msys*)
   AC_MSG_RESULT([${host_os}])
   win32=true
   LDFLAGS+=" -no-undefined -lws2_32"
